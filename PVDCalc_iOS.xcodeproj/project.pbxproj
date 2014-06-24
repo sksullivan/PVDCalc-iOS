@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		E5384F8D1953AF27006B0E7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5384F8C1953AF27006B0E7E /* main.m */; };
-		E5384F901953AF27006B0E7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5384F8F1953AF27006B0E7E /* AppDelegate.m */; };
 		E5384F921953AF27006B0E7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5384F911953AF27006B0E7E /* Images.xcassets */; };
 		E5384F9E1953AF27006B0E7E /* PVDCalc_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5384F9D1953AF27006B0E7E /* PVDCalc_iOSTests.m */; };
+		E5384FB11953AF96006B0E7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5384FAA1953AF96006B0E7E /* AppDelegate.m */; };
+		E5384FB21953AF96006B0E7E /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5384FAC1953AF96006B0E7E /* ListViewController.m */; };
+		E5384FB31953AF96006B0E7E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5384FAE1953AF96006B0E7E /* MainViewController.m */; };
+		E5384FB41953AF96006B0E7E /* PVDCalcStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E5384FB01953AF96006B0E7E /* PVDCalcStore.m */; };
+		E5384FB61953AFE0006B0E7E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5384FB51953AFE0006B0E7E /* MainStoryboard.storyboard */; };
+		E5384FB81956907C006B0E7E /* SensorList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5384FB71956907C006B0E7E /* SensorList.plist */; };
+		E5384FBA1956A62E006B0E7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5384FB91956A62E006B0E7E /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,12 +33,21 @@
 		E5384F871953AF27006B0E7E /* PVDCalc_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PVDCalc_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5384F8B1953AF27006B0E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5384F8C1953AF27006B0E7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E5384F8E1953AF27006B0E7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E5384F8F1953AF27006B0E7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E5384F911953AF27006B0E7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E5384F971953AF27006B0E7E /* PVDCalc_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PVDCalc_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5384F9C1953AF27006B0E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5384F9D1953AF27006B0E7E /* PVDCalc_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVDCalc_iOSTests.m; sourceTree = "<group>"; };
+		E5384FA91953AF96006B0E7E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "../../PVDCalc-iOS/PVDcalc/AppDelegate.h"; sourceTree = "<group>"; };
+		E5384FAA1953AF96006B0E7E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "../../PVDCalc-iOS/PVDcalc/AppDelegate.m"; sourceTree = "<group>"; };
+		E5384FAB1953AF96006B0E7E /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListViewController.h; path = "../../PVDCalc-iOS/PVDcalc/ListViewController.h"; sourceTree = "<group>"; };
+		E5384FAC1953AF96006B0E7E /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListViewController.m; path = "../../PVDCalc-iOS/PVDcalc/ListViewController.m"; sourceTree = "<group>"; };
+		E5384FAD1953AF96006B0E7E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = "../../PVDCalc-iOS/PVDcalc/MainViewController.h"; sourceTree = "<group>"; };
+		E5384FAE1953AF96006B0E7E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = "../../PVDCalc-iOS/PVDcalc/MainViewController.m"; sourceTree = "<group>"; };
+		E5384FAF1953AF96006B0E7E /* PVDCalcStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVDCalcStore.h; path = "../../PVDCalc-iOS/PVDcalc/PVDCalcStore.h"; sourceTree = "<group>"; };
+		E5384FB01953AF96006B0E7E /* PVDCalcStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PVDCalcStore.m; path = "../../PVDCalc-iOS/PVDcalc/PVDCalcStore.m"; sourceTree = "<group>"; };
+		E5384FB51953AFE0006B0E7E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E5384FB71956907C006B0E7E /* SensorList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SensorList.plist; sourceTree = "<group>"; };
+		E5384FB91956A62E006B0E7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5384FBA1956A62E006B0E7E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +72,7 @@
 		E5384F7E1953AF26006B0E7E = {
 			isa = PBXGroup;
 			children = (
+				E5384FB91956A62E006B0E7E /* Foundation.framework */,
 				E5384F891953AF27006B0E7E /* PVDCalc_iOS */,
 				E5384F9A1953AF27006B0E7E /* PVDCalc_iOSTests */,
 				E5384F881953AF27006B0E7E /* Products */,
@@ -74,8 +91,14 @@
 		E5384F891953AF27006B0E7E /* PVDCalc_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E5384F8E1953AF27006B0E7E /* AppDelegate.h */,
-				E5384F8F1953AF27006B0E7E /* AppDelegate.m */,
+				E5384FA91953AF96006B0E7E /* AppDelegate.h */,
+				E5384FAA1953AF96006B0E7E /* AppDelegate.m */,
+				E5384FAB1953AF96006B0E7E /* ListViewController.h */,
+				E5384FAC1953AF96006B0E7E /* ListViewController.m */,
+				E5384FAD1953AF96006B0E7E /* MainViewController.h */,
+				E5384FAE1953AF96006B0E7E /* MainViewController.m */,
+				E5384FAF1953AF96006B0E7E /* PVDCalcStore.h */,
+				E5384FB01953AF96006B0E7E /* PVDCalcStore.m */,
 				E5384F911953AF27006B0E7E /* Images.xcassets */,
 				E5384F8A1953AF27006B0E7E /* Supporting Files */,
 			);
@@ -85,8 +108,10 @@
 		E5384F8A1953AF27006B0E7E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E5384FB51953AFE0006B0E7E /* MainStoryboard.storyboard */,
 				E5384F8B1953AF27006B0E7E /* Info.plist */,
 				E5384F8C1953AF27006B0E7E /* main.m */,
+				E5384FB71956907C006B0E7E /* SensorList.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -157,6 +182,7 @@
 				TargetAttributes = {
 					E5384F861953AF27006B0E7E = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = FP48EUQHLU;
 					};
 					E5384F961953AF27006B0E7E = {
 						CreatedOnToolsVersion = 6.0;
@@ -187,6 +213,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5384FB81956907C006B0E7E /* SensorList.plist in Resources */,
+				E5384FB61953AFE0006B0E7E /* MainStoryboard.storyboard in Resources */,
 				E5384F921953AF27006B0E7E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,8 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5384F901953AF27006B0E7E /* AppDelegate.m in Sources */,
+				E5384FB41953AF96006B0E7E /* PVDCalcStore.m in Sources */,
 				E5384F8D1953AF27006B0E7E /* main.m in Sources */,
+				E5384FB21953AF96006B0E7E /* ListViewController.m in Sources */,
+				E5384FB31953AF96006B0E7E /* MainViewController.m in Sources */,
+				E5384FB11953AF96006B0E7E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,9 +343,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PVDCalc_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,9 +357,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PVDCalc_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -384,6 +421,7 @@
 				E5384FA31953AF27006B0E7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5384FA41953AF27006B0E7E /* Build configuration list for PBXNativeTarget "PVDCalc_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -392,6 +430,7 @@
 				E5384FA61953AF27006B0E7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

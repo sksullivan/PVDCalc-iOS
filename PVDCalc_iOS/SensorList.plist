@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Canon EOS Rebel T3i</key>
+	<string>22.3</string>
+	<key>Generic APS-C</key>
+	<string>22.3</string>
+	<key>Canon EOS Rebel T5i</key>
+	<string>22.3</string>
+	<key>Canon EOS-1D X</key>
+	<string>36</string>
+	<key>Canon EOS 5D Mark III</key>
+	<string>36</string>
+	<key>Nikon D7100</key>
+	<string>23.5</string>
+	<key>Nikon D3100</key>
+	<string>23.1</string>
+	<key>Nikon D3300</key>
+	<string>23.5</string>
+	<key>iPhone 5S</key>
+	<string>4.8</string>
+	<key>iPhone 5</key>
+	<string>4.54</string>
+	<key>Generic APS-H</key>
+	<string>27.9</string>
+	<key>Panasonic LUMIX GH4</key>
+	<string>17.3</string>
+	<key>Nikon D5300</key>
+	<string>23.5</string>
+	<key>35mm Full Frame</key>
+	<string>35</string>
+</dict>
+</plist>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="h7K-EI-aZV">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="25P-UA-hc6">
+            <objects>
+                <navigationController id="h7K-EI-aZV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4fV-G1-Tf2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OQI-qL-L53" kind="relationship" relationship="rootViewController" id="7yq-z7-qwN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y43-bJ-kPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="67"/>
+        </scene>
+        <!--Main View Controller - Calculator-->
+        <scene sceneID="ceF-yQ-EJ7">
+            <objects>
+                <viewController id="OQI-qL-L53" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1lT-33-T4n"/>
+                        <viewControllerLayoutGuide type="bottom" id="z85-R7-TeO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="70j-Aq-Qwd" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="34L-fs-v0d">
+                                <rect key="frame" x="20" y="296" width="186" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrU-j7-Uzg">
+                                <rect key="frame" x="20" y="214" width="85" height="31"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateViewingDistance:" destination="OQI-qL-L53" eventType="touchUpInside" id="pSP-c4-AsD"/>
+                                    <action selector="dismissDecimalPad:" destination="OQI-qL-L53" eventType="touchDown" id="NSe-xm-eRb"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Image Sensor Width" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qTr-Hb-cT3">
+                                <rect key="frame" x="20" y="124" width="186" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Horizontal Field of View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8h-VX-dkb">
+                                <rect key="frame" x="20" y="340" width="201" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="mm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLf-E6-vuF">
+                                <rect key="frame" x="214" y="127" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="mm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cq1-rf-xi1">
+                                <rect key="frame" x="214" y="90" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Focal DIstance" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YTJ-Fj-mhN">
+                                <rect key="frame" x="20" y="86" width="186" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reproduction WIdth" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1qp-Qa-DfX">
+                                <rect key="frame" x="20" y="162" width="186" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oDq-zl-lRe">
+                                <rect key="frame" x="20" y="369" width="186" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lw-6y-bVm">
+                                <rect key="frame" x="266" y="166" width="22" height="22"/>
+                                <connections>
+                                    <action selector="dismissDecimalPad:" destination="OQI-qL-L53" eventType="touchDown" id="MJR-5F-BC0"/>
+                                    <segue destination="X38-kB-u72" kind="show" id="TfE-wk-fvf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhM-Xn-f3l">
+                                <rect key="frame" x="205" y="161" width="53" height="31"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="ft">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setImageWidthUnit:" destination="OQI-qL-L53" eventType="touchUpInside" id="iWP-Lt-utO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="deg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg4-BY-aus">
+                                <rect key="frame" x="214" y="373" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxB-9V-ZyS">
+                                <rect key="frame" x="205" y="296" width="53" height="31"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="ft">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissDecimalPad:" destination="OQI-qL-L53" eventType="touchDown" id="i5w-Om-8Hh"/>
+                                    <action selector="setViewingDistanceUnit:" destination="OQI-qL-L53" eventType="touchUpInside" id="YcY-q5-irS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Viewing Distance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGP-5P-OEq">
+                                <rect key="frame" x="20" y="267" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="299" y="89" width="132" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75798803569999995" green="0.87999248500000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <connections>
+                            <action selector="dismissDecimalPad:" destination="OQI-qL-L53" eventType="touchDown" id="qyu-pq-2ZN"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calculator" id="yhx-7z-cnC"/>
+                    <connections>
+                        <outlet property="displayDistanceButton" destination="yxB-9V-ZyS" id="TIL-J9-4u2"/>
+                        <outlet property="distanceDisplay" destination="34L-fs-v0d" id="RWc-y1-G6f"/>
+                        <outlet property="fieldOfViewDisplay" destination="oDq-zl-lRe" id="MCJ-Sr-TkH"/>
+                        <outlet property="focalDistanceField" destination="YTJ-Fj-mhN" id="p3j-rF-Ra9"/>
+                        <outlet property="imageSensorWidthField" destination="qTr-Hb-cT3" id="z4d-qH-Kzd"/>
+                        <outlet property="imageWidthButton" destination="FhM-Xn-f3l" id="3fd-eF-fzS"/>
+                        <outlet property="imageWidthField" destination="1qp-Qa-DfX" id="YCS-ma-sZh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gS-ro-1o8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="67"/>
+        </scene>
+        <!--List View Controller - Image Sensor Selection-->
+        <scene sceneID="CcW-3g-gXd">
+            <objects>
+                <viewController id="X38-kB-u72" customClass="ListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1H0-IZ-o6G"/>
+                        <viewControllerLayoutGuide type="bottom" id="F8A-GL-0o8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vYb-ke-q6I">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="276" translatesAutoresizingMaskIntoConstraints="NO" id="bca-m5-Ip0">
+                                <rect key="frame" x="20" y="77" width="276" height="142"/>
+                                <string key="text">The Image Sensor Width is a mesure of the horizontal length of a camera's internal Image Sensor. Some cameras' Image Sensor Widths are listed below. Select a camera to automatically find its Image Sensor Width.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z0e-2b-2Lp">
+                                <rect key="frame" x="160" y="318" width="320" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="X38-kB-u72" id="LXm-PN-tJm"/>
+                                    <outlet property="delegate" destination="X38-kB-u72" id="h2i-mF-NgJ"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Sensor Width:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBh-T6-oiG">
+                                <rect key="frame" x="20" y="237" width="125" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="257" width="122" height="30"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="Mro-id-gan">
+                                <rect key="frame" x="148" y="237" width="63" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name=".LucidaGrandeUI" family=".Lucida Grande UI" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="161" y="256" width="65" height="30"/>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bca-m5-Ip0" firstAttribute="top" secondItem="1H0-IZ-o6G" secondAttribute="bottom" constant="13" id="ARu-CE-zGA"/>
+                            <constraint firstItem="bca-m5-Ip0" firstAttribute="leading" secondItem="vYb-ke-q6I" secondAttribute="leading" constant="20" id="KDM-HI-1TE"/>
+                            <constraint firstAttribute="trailing" secondItem="z0e-2b-2Lp" secondAttribute="trailing" id="Kss-Ew-xzB"/>
+                            <constraint firstItem="F8A-GL-0o8" firstAttribute="top" secondItem="z0e-2b-2Lp" secondAttribute="bottom" id="vUc-wn-Ern"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image Sensor Selection" id="fas-mf-10q"/>
+                    <connections>
+                        <outlet property="sensorName" destination="MBh-T6-oiG" id="Ty3-cN-Wly"/>
+                        <outlet property="sensorPicker" destination="z0e-2b-2Lp" id="MSV-J5-AeA"/>
+                        <outlet property="sensorValue" destination="Mro-id-gan" id="YyD-nw-6xB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fr-c1-czt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1608" y="-30"/>
+        </scene>
+    </scenes>
+</document>
