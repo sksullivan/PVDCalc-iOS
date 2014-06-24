@@ -13,7 +13,6 @@
 		E5384FB11953AF96006B0E7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5384FAA1953AF96006B0E7E /* AppDelegate.m */; };
 		E5384FB21953AF96006B0E7E /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5384FAC1953AF96006B0E7E /* ListViewController.m */; };
 		E5384FB31953AF96006B0E7E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5384FAE1953AF96006B0E7E /* MainViewController.m */; };
-		E5384FB41953AF96006B0E7E /* PVDCalcStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E5384FB01953AF96006B0E7E /* PVDCalcStore.m */; };
 		E5384FB61953AFE0006B0E7E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5384FB51953AFE0006B0E7E /* MainStoryboard.storyboard */; };
 		E5384FB81956907C006B0E7E /* SensorList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5384FB71956907C006B0E7E /* SensorList.plist */; };
 		E5384FBA1956A62E006B0E7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5384FB91956A62E006B0E7E /* Foundation.framework */; };
@@ -43,8 +42,6 @@
 		E5384FAC1953AF96006B0E7E /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListViewController.m; path = "../../PVDCalc-iOS/PVDcalc/ListViewController.m"; sourceTree = "<group>"; };
 		E5384FAD1953AF96006B0E7E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = "../../PVDCalc-iOS/PVDcalc/MainViewController.h"; sourceTree = "<group>"; };
 		E5384FAE1953AF96006B0E7E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = "../../PVDCalc-iOS/PVDcalc/MainViewController.m"; sourceTree = "<group>"; };
-		E5384FAF1953AF96006B0E7E /* PVDCalcStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVDCalcStore.h; path = "../../PVDCalc-iOS/PVDcalc/PVDCalcStore.h"; sourceTree = "<group>"; };
-		E5384FB01953AF96006B0E7E /* PVDCalcStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PVDCalcStore.m; path = "../../PVDCalc-iOS/PVDcalc/PVDCalcStore.m"; sourceTree = "<group>"; };
 		E5384FB51953AFE0006B0E7E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		E5384FB71956907C006B0E7E /* SensorList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SensorList.plist; sourceTree = "<group>"; };
 		E5384FB91956A62E006B0E7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,8 +94,6 @@
 				E5384FAC1953AF96006B0E7E /* ListViewController.m */,
 				E5384FAD1953AF96006B0E7E /* MainViewController.h */,
 				E5384FAE1953AF96006B0E7E /* MainViewController.m */,
-				E5384FAF1953AF96006B0E7E /* PVDCalcStore.h */,
-				E5384FB01953AF96006B0E7E /* PVDCalcStore.m */,
 				E5384F911953AF27006B0E7E /* Images.xcassets */,
 				E5384F8A1953AF27006B0E7E /* Supporting Files */,
 			);
@@ -233,7 +228,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5384FB41953AF96006B0E7E /* PVDCalcStore.m in Sources */,
 				E5384F8D1953AF27006B0E7E /* main.m in Sources */,
 				E5384FB21953AF96006B0E7E /* ListViewController.m in Sources */,
 				E5384FB31953AF96006B0E7E /* MainViewController.m in Sources */,
