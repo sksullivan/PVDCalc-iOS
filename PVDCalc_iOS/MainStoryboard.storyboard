@@ -18,7 +18,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y43-bJ-kPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="67"/>
+            <point key="canvasLocation" x="246" y="72"/>
         </scene>
         <!--Main View Controller - Calculator-->
         <scene sceneID="ceF-yQ-EJ7">
@@ -52,6 +52,9 @@
                                 <rect key="frame" x="20" y="124" width="186" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="OQI-qL-L53" id="VGM-m6-GCH"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Horizontal Field of View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8h-VX-dkb">
                                 <rect key="frame" x="20" y="340" width="201" height="21"/>
@@ -64,6 +67,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="214" y="128" width="34" height="21"/>
+                                </variation>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="mm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cq1-rf-xi1">
                                 <rect key="frame" x="214" y="90" width="34" height="21"/>
@@ -73,27 +79,69 @@
                                 <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="30" height="21"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="214" y="90" width="34" height="21"/>
+                                </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Focal DIstance" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YTJ-Fj-mhN">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Focal Length" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YTJ-Fj-mhN">
                                 <rect key="frame" x="20" y="86" width="186" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="OQI-qL-L53" id="y1C-Ix-Z3h"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reproduction WIdth" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1qp-Qa-DfX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Display Width" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1qp-Qa-DfX">
                                 <rect key="frame" x="20" y="162" width="186" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="OQI-qL-L53" id="2Ro-cG-VHW"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oDq-zl-lRe">
                                 <rect key="frame" x="20" y="369" width="186" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lw-6y-bVm">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lw-6y-bVm">
                                 <rect key="frame" x="266" y="166" width="22" height="22"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="266" y="166" width="22" height="22"/>
+                                </variation>
                                 <connections>
                                     <action selector="dismissDecimalPad:" destination="OQI-qL-L53" eventType="touchDown" id="MJR-5F-BC0"/>
-                                    <segue destination="X38-kB-u72" kind="show" id="TfE-wk-fvf"/>
+                                    <action selector="displayInfo:" destination="OQI-qL-L53" eventType="touchUpInside" id="TP0-As-CHS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iq9-US-TYX">
+                                <rect key="frame" x="266" y="166" width="22" height="22"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="266" y="128" width="22" height="22"/>
+                                </variation>
+                                <connections>
+                                    <action selector="dismissDecimalPad:" destination="OQI-qL-L53" eventType="touchDown" id="tTg-KM-EXR"/>
+                                    <action selector="displayInfo:" destination="OQI-qL-L53" eventType="touchUpInside" id="Vk2-M4-akI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epE-TK-VDr">
+                                <rect key="frame" x="266" y="166" width="22" height="22"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="266" y="90" width="22" height="22"/>
+                                </variation>
+                                <connections>
+                                    <action selector="dismissDecimalPad:" destination="OQI-qL-L53" eventType="touchDown" id="5k2-33-KsO"/>
+                                    <action selector="displayInfo:" destination="OQI-qL-L53" eventType="touchUpInside" id="hKA-P8-vhJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDI-Ty-dSp">
+                                <rect key="frame" x="266" y="166" width="22" height="22"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="266" y="300" width="22" height="22"/>
+                                </variation>
+                                <connections>
+                                    <action selector="dismissDecimalPad:" destination="OQI-qL-L53" eventType="touchDown" id="GJg-Mb-SWD"/>
+                                    <action selector="displayInfo:" destination="OQI-qL-L53" eventType="touchUpInside" id="IMw-CN-pfn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhM-Xn-f3l">
@@ -132,9 +180,73 @@
                                     <rect key="frame" x="299" y="89" width="132" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FS-ML-c5M">
+                                <rect key="frame" x="266" y="166" width="22" height="22"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="266" y="373" width="22" height="22"/>
+                                </variation>
+                                <connections>
+                                    <action selector="dismissDecimalPad:" destination="OQI-qL-L53" eventType="touchDown" id="eRk-qe-e48"/>
+                                    <action selector="displayInfo:" destination="OQI-qL-L53" eventType="touchUpInside" id="8Ca-8p-ZPa"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Click next to a field to display information." translatesAutoresizingMaskIntoConstraints="NO" id="bVa-e3-eDO">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="fwa-sH-N2f"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fwa-sH-N2f"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                    <rect key="frame" x="20" y="420" width="600" height="200"/>
+                                    <mask key="constraints">
+                                        <include reference="fwa-sH-N2f"/>
+                                    </mask>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.75798803569999995" green="0.87999248500000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="z85-R7-TeO" firstAttribute="top" secondItem="bVa-e3-eDO" secondAttribute="bottom" constant="20" id="5Wj-Tx-F5O"/>
+                            <constraint firstItem="bVa-e3-eDO" firstAttribute="leading" secondItem="70j-Aq-Qwd" secondAttribute="leading" constant="20" id="GPX-ob-i0a"/>
+                            <constraint firstAttribute="trailing" secondItem="bVa-e3-eDO" secondAttribute="trailing" constant="20" id="pNM-EV-NAw"/>
+                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Iq9-US-TYX"/>
+                                <exclude reference="epE-TK-VDr"/>
+                                <exclude reference="dDI-Ty-dSp"/>
+                                <exclude reference="8FS-ML-c5M"/>
+                                <exclude reference="bVa-e3-eDO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5Wj-Tx-F5O"/>
+                                <exclude reference="GPX-ob-i0a"/>
+                                <exclude reference="pNM-EV-NAw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="5Wj-Tx-F5O"/>
+                                <include reference="GPX-ob-i0a"/>
+                                <include reference="pNM-EV-NAw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="Iq9-US-TYX"/>
+                                <include reference="epE-TK-VDr"/>
+                                <include reference="dDI-Ty-dSp"/>
+                                <include reference="8FS-ML-c5M"/>
+                                <include reference="bVa-e3-eDO"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <action selector="dismissDecimalPad:" destination="OQI-qL-L53" eventType="touchDown" id="qyu-pq-2ZN"/>
                         </connections>
@@ -148,11 +260,17 @@
                         <outlet property="imageSensorWidthField" destination="qTr-Hb-cT3" id="z4d-qH-Kzd"/>
                         <outlet property="imageWidthButton" destination="FhM-Xn-f3l" id="3fd-eF-fzS"/>
                         <outlet property="imageWidthField" destination="1qp-Qa-DfX" id="YCS-ma-sZh"/>
+                        <outlet property="infoDW" destination="8Lw-6y-bVm" id="oDk-nC-CDf"/>
+                        <outlet property="infoFL" destination="epE-TK-VDr" id="RKn-Rd-XtJ"/>
+                        <outlet property="infoHFOV" destination="8FS-ML-c5M" id="JBk-ni-gaR"/>
+                        <outlet property="infoISW" destination="Iq9-US-TYX" id="PBN-5X-qtg"/>
+                        <outlet property="infoTextView" destination="bVa-e3-eDO" id="x4M-cA-GdV"/>
+                        <outlet property="infoVD" destination="dDI-Ty-dSp" id="wlv-5G-CF7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9gS-ro-1o8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="801" y="67"/>
+            <point key="canvasLocation" x="801" y="72"/>
         </scene>
         <!--List View Controller - Image Sensor Selection-->
         <scene sceneID="CcW-3g-gXd">
@@ -166,9 +284,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="276" translatesAutoresizingMaskIntoConstraints="NO" id="bca-m5-Ip0">
-                                <rect key="frame" x="20" y="77" width="276" height="142"/>
-                                <string key="text">The Image Sensor Width is a mesure of the horizontal length of a camera's internal Image Sensor. Some cameras' Image Sensor Widths are listed below. Select a camera to automatically find its Image Sensor Width.</string>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="271" translatesAutoresizingMaskIntoConstraints="NO" id="bca-m5-Ip0">
+                                <rect key="frame" x="20" y="77" width="271" height="142"/>
+                                <string key="text">The Image Sensor Width is a measure of the width of a camera's internal Image Sensor. Some cameras' Image Sensor Widths are listed below. Select a camera to automatically use its Image Sensor Width. (PLACEHOLDER)</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -210,6 +328,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Image Sensor Selection" id="fas-mf-10q"/>
                     <connections>
+                        <outlet property="ISWText" destination="bca-m5-Ip0" id="UB0-6T-flx"/>
                         <outlet property="sensorName" destination="MBh-T6-oiG" id="Ty3-cN-Wly"/>
                         <outlet property="sensorPicker" destination="z0e-2b-2Lp" id="MSV-J5-AeA"/>
                         <outlet property="sensorValue" destination="Mro-id-gan" id="YyD-nw-6xB"/>
@@ -217,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fr-c1-czt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1608" y="-30"/>
+            <point key="canvasLocation" x="1346" y="72"/>
         </scene>
     </scenes>
 </document>

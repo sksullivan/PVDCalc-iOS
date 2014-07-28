@@ -2,9 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Apple iPhone 4, iPad 3</key>
+	<string>6.17</string>
+	<key>Apple iPhone 5, iPad 4, iPad Air</key>
+	<string>4.54</string>
+	<key>Apple iPhone 5S</key>
+	<string>4.8</string>
 	<key>Canon EOS Rebel T3i</key>
-	<string>22.3</string>
-	<key>Generic APS-C</key>
 	<string>22.3</string>
 	<key>Canon EOS Rebel T5i</key>
 	<string>22.3</string>
@@ -12,23 +16,35 @@
 	<string>36</string>
 	<key>Canon EOS 5D Mark III</key>
 	<string>36</string>
+	<key>Canon PowerShot G16</key>
+	<string>7.60</string>
+	<key>Canon PowerShot SX510 HS</key>
+	<string>6.17</string>
+	<key>Generic 1/2.3-inch</key>
+	<string>6.17</string>
+	<key>Generic 1/1.7-inch</key>
+	<string>7.60</string>
+	<key>Generic APS-C</key>
+	<string>22.3</string>
+	<key>Generic APS-H</key>
+	<string>27.9</string>
+	<key>Generic 35mm Full Frame</key>
+	<string>35</string>
+	<key>IMAX Film</key>
+	<string>70.41</string>
 	<key>Nikon D7100</key>
 	<string>23.5</string>
 	<key>Nikon D3100</key>
 	<string>23.1</string>
 	<key>Nikon D3300</key>
 	<string>23.5</string>
-	<key>iPhone 5S</key>
-	<string>4.8</string>
-	<key>iPhone 5</key>
-	<string>4.54</string>
-	<key>Generic APS-H</key>
-	<string>27.9</string>
-	<key>Panasonic LUMIX GH4</key>
-	<string>17.3</string>
 	<key>Nikon D5300</key>
 	<string>23.5</string>
-	<key>35mm Full Frame</key>
-	<string>35</string>
+	<key>Panasonic LUMIX GH4</key>
+	<string>17.3</string>
+	<key>Phase One IQ 280, 180, 260, 160</key>
+	<string>53.7</string>
+	<key>Phase One IQ 250, 140</key>
+	<string>44</string>
 </dict>
 </plist>

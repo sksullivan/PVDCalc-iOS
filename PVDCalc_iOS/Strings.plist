@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>default</key>
+	<string>Tester.</string>
+	<key>isw</key>
+	<string>The Image Sensor Width is a measure of the width of a camera&apos;s internal Image Sensor. Some cameras&apos; Image Sensor Widths are listed below. Select a camera to automatically use its Image Sensor Width.</string>
+	<key>fl</key>
+	<string>Focal Length.</string>
+	<key>dw</key>
+	<string>Display Width.</string>
+	<key>vd</key>
+	<string>Viewing Distance.</string>
+	<key>hfov</key>
+	<string>Horizontal Field of View.</string>
+</dict>
+</plist>
